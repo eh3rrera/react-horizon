@@ -1,6 +1,6 @@
 # react-horizon
 
-This application shows how to integrate React, React Router, and Horizon.io with OAuth authentication. You can follow the [tutorial](http://tutorials.pluralsight.com/) to build this application or jump straight to the code.
+This application shows how to integrate React, React Router, and Horizon.io with OAuth authentication. You can follow the [tutorial](http://tutorials.pluralsight.com/interesting-apis/building-a-real-time-application-with-react-react-router-horizon-io-and-oauth) to build this application or jump straight to the code.
 
 # Requirements
 
@@ -9,7 +9,7 @@ This application shows how to integrate React, React Router, and Horizon.io with
 - [Horizon.io](http://horizon.io/install/)
 
 # Installation
-1. Start RethinkDB server with the command `rethinkdb`
+1. Start the RethinkDB server with the command `rethinkdb`
 2. In another terminal, clone this repository and `cd` into it.
 3. Register a new application on Github:
     1. Go to https://github.com/settings/applications/new and enter the following information:
@@ -17,12 +17,12 @@ This application shows how to integrate React, React Router, and Horizon.io with
         - **Homepage URL:** https://localhost:8181 (or whatever your URL is, just remember the *https* part)
     2. When you register the application, the client ID, and client secret will be presented
     3. Copy this values to the `config.js` in the `github_oauth_options` object
-    4. In this file, change `token_secret` for something else. This is the key used to sign the authentication tokens
-4. Execute `hz create-cert` to create the self-signed certificate for SSL (this command will create two files, `horizon-cert.pem` and `horizon-key.pem`
-5. Import the schema and permission rules to you RethinkDB server with `hz set-schema -n react_horizon -c localhost:28015 schema.toml` (change the connection URL if it applies)
+    4. In this file, change `token_secret` for something else. This is the key used to sign the authentication tokens. You can change the project name and the port if you want
+4. Execute `hz create-cert` to create the self-signed certificate for SSL (this command will create two files, `horizon-cert.pem` and `horizon-key.pem`)
+5. Import the schema and permission rules to you RethinkDB server with `hz set-schema -n react_horizon -c localhost:28015 schema.toml` (change the name of the project if you changed in the previous step and the connection URL if it is different for you)
 6. Execute `npm install` to download dependencies
 7. Execute `npm start` to bundle the application and start the Node.js server
-8. Go to https://localhost:8181, log in with your Github account and start playing with the app.
+8. Go to https://localhost:8181 (or whatever your URL is), log in with your Github account and start playing with the app.
 
 # License
 MIT
