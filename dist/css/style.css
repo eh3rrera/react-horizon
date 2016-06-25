@@ -1,0 +1,80 @@
+body {
+	background:#300637;
+	padding:4em;
+	text-align:center;
+	font-family: 'Arial, Helvetica, sans-serif';
+	color:#c0c0c0;
+}
+
+h1 {
+	font-weight:100;
+}
+
+.menu {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.menu-option {
+	color:#999;
+	background:rgba(0, 0, 0, 0.5);
+	padding:1em 5em;
+	font-size:0.8em;
+	text-decoration:none;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+
+.menu-option:hover {
+	background:rgba(0, 0, 0, 0.4);
+	color:#fff;
+}
+
+.menu-option.active {
+	border:none;
+	background:rgba(0, 0, 0, 0.4);
+	background:#fff;
+	padding:1.5em 5em;
+	color:#000;
+	font-size:0.9em;
+}
+
+.login-btn {
+	border:none;
+	color:#999;
+    background:rgba(0, 0, 0, 0.5);
+	padding:1.5em 5em;
+	font-size:0.9em;
+	text-transform:uppercase;
+    cursor: pointer;
+}
+
+.message-input {
+    display: block;
+    margin: 0.5em;
+    padding: 0.8em;
+    width: 90%;
+    border: none;
+    font-family: sans-serif;
+    font-size: .9em;
+}
+
+.message-container {
+	margin: 2em auto;
+	padding: 0.8em;
+	width: 80%;
+}
+
+.message-btn {
+	padding: .75rem;
+	margin: .5em auto 1.5em;
+	width: 6em;
+	text-align: center;
+    cursor: pointer;
+}
+
+.message-row {
+    padding: .75em;
+    margin: .75em;
+    box-shadow:0 0 1px 1px #999;
+}

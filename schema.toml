@@ -1,0 +1,17 @@
+# This is a TOML document
+
+[collections.messages]
+indexes = ["author"]
+
+[groups.admin]
+[groups.admin.rules.carte_blanche]
+template = "any()"
+
+[groups.authenticated.rules.read_own_messages]
+template = "collection('messages').findAll({author: userId()})"
+
+[groups.authenticated.rules.write_own_messages]
+template = "collection('messages').store({author: userId(), text: any()})"
+
+[groups.default.rules.read_current_user]
+template = "collection('users').find({id: userId()})"
