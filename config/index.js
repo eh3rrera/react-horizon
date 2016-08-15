@@ -1,10 +1,12 @@
 module.exports = {
+  port: process.env.APP_PORT || 8181,
+
   horizon_options: {
-	  project_name: 'react_horizon',
+    project_name: 'react_horizon',
     permissions: true,
-    auth: {       
+    auth: {
       token_secret:  '<YOUR_SECRET_TOKEN>'
-  	}
+    }
   },
 
   github_oauth_options: {
@@ -12,6 +14,4 @@ module.exports = {
     id: '00000000000000000000',
     secret: '0000000000000000000000000000000000000000',
   },
-
-  port: process.env.APP_PORT || 8181
-}
+};
