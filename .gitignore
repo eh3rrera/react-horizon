@@ -1,5 +1,5 @@
 node_modules
-npm-debug.log
+**/*.log
 .hz
 rethinkdb_data
 dist/js/bundle.*

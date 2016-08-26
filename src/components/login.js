@@ -7,8 +7,7 @@ export default class Login extends Component {
 
     handleAuth = () => {
         _horizon.authEndpoint('github').subscribe((endpoint) => {
-            // window.location.pathname = endpoint;
-            window.location.pathname = '/horizon/github';
+            window.location.replace(endpoint);
         });
     };
 

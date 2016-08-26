@@ -18,10 +18,6 @@ app.get('*', function (req, res) {
 const options = {
   key: fs.readFileSync(path.resolve(__dirname, './config/tls/horizon-key.pem')),
   cert: fs.readFileSync(path.resolve(__dirname, './config/tls/horizon-cert.pem')),
-  rdb_host              : 'rethinkdb-stable',
-  auto_create_collection: true,
-  auto_create_index     : true,
-  auth                  : config.horizon_options.auth,
 };
 
 const PORT = config.port;
