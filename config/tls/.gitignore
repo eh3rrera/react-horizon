@@ -1,0 +1,5 @@
+!.
+# ignore everything
+*
+# except for .gitignore files in the current directory
+!.gitignore

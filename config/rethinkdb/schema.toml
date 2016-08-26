@@ -3,6 +3,9 @@
 [collections.messages]
 indexes = ["author"]
 
+[collections.users]
+indexes = ["id"]
+
 [groups.admin]
 [groups.admin.rules.carte_blanche]
 template = "any()"

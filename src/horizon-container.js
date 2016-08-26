@@ -1,6 +1,6 @@
 import Horizon from '@horizon/client'
 
-const _horizon = Horizon({authType: 'token'});
+const _horizon = Horizon({authType: 'unauthenticated'});
 
 export default {
   get: () => _horizon,
