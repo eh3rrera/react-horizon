@@ -6,7 +6,7 @@
   "scripts": {
     "setup:init": "npm-run-all --parallel start:db setup:db setup:ssl",
     "setup:ssl": "hz create-cert && mv *.pem config/tls",
-    "setup:db": ". ./config/rethinkdb/setup.sh",
+    "setup:db": "../config/rethinkdb/setup.sh",
     "start:db": "rethinkdb",
     "start": "webpack && node server.js"
   },
